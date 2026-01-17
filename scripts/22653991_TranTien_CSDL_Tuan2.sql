@@ -68,7 +68,7 @@ Trả lời:
 -- 3. Tạo database và các bảng --
 
 USE master;
-DROP DATABASE qlbh
+DROP DATABASE IF EXISTS qlbh;
 
 CREATE DATABASE qlbh
 ON (
