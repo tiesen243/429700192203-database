@@ -89,13 +89,15 @@ LOG ON (
 USE qlbh;
 
 -- Bảng nhóm sản phẩm
-CREATE TABLE nhom_san_pham (
+CREATE TABLE nhom_san_pham
+(
   ma_nhom INT NOT NULL IDENTITY,
   ten_nhom NVARCHAR(15)
 );
 
 -- Bảng sản phẩm
-CREATE TABLE san_pham (
+CREATE TABLE san_pham
+(
   ma_sp INT NOT NULL IDENTITY,
   ma_ncc INT,
   ma_nhom INT,
@@ -107,7 +109,8 @@ CREATE TABLE san_pham (
 );
 
 -- Bảng hóa đơn
-CREATE TABLE hoa_don (
+CREATE TABLE hoa_don
+(
   ma_hd INT NOT NULL IDENTITY,
   ma_kh CHAR(5),
   ngay_lap_hd DATETIME,
@@ -116,7 +119,8 @@ CREATE TABLE hoa_don (
 );
 
 -- Bảng chi tiết hóa đơn
-CREATE TABLE ct_hoa_don (
+CREATE TABLE ct_hoa_don
+(
   ma_hd INT NOT NULL,
   ma_sp INT NOT NULL,
   so_luong SMALLINT,
@@ -125,7 +129,8 @@ CREATE TABLE ct_hoa_don (
 );
 
 -- Bảng nhà cung cấp
-CREATE TABLE nha_cung_cap (
+CREATE TABLE nha_cung_cap
+(
   ma_ncc INT NOT NULL IDENTITY,
   ten_ncc NVARCHAR(40) NOT NULL,
   dia_chi NVARCHAR(60),
@@ -135,7 +140,8 @@ CREATE TABLE nha_cung_cap (
 );
 
 -- Bảng khách hàng
-CREATE TABLE khach_hang (
+CREATE TABLE khach_hang
+(
   ma_kh CHAR(5) NOT NULL,
   ten_kh NVARCHAR(40) NOT NULL,
   loai_kh NVARCHAR(3),
