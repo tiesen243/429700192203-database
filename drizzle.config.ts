@@ -5,7 +5,7 @@ export default defineConfig({
   dbCredentials: {
     url: `Server=127.0.0.1,1433;User Id=sa;Password=${process.env.SA_PASSWORD};Database=qlbh;TrustServerCertificate=True;`,
   },
-  schema: './src/schema.ts',
+  schema: './drizzle/schema.ts',
   casing: 'snake_case',
   strict: true,
 })

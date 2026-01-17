@@ -1,15 +1,17 @@
-# 429700192203-database
+# Môn học: Hệ cơ sở dữ liệu (429700192203)
 
-To install dependencies:
+Repository này chứa các bài tập và mã nguồn cho môn học **Hệ cơ sở dữ liệu**.
 
-```bash
-bun install
-```
+## Cấu trúc Repository
 
-To run:
+- `assignment.pdf`: Tệp PDF chứa đề bài cho các bài thực hành.
+- `scripts/`: Thư mục chứa các SQL scripts là lời giải cho từng bài thực hành.
 
-```bash
-bun run index.ts
-```
+## Hướng dẫn
 
-This project was created using `bun init` in bun v1.3.6. [Bun](https://bun.com) is a fast all-in-one JavaScript runtime.
+1.  Xem đề bài trong tệp `assignment.pdf`.
+2.  Tham khảo lời giải tương ứng cho mỗi bài lab trong thư mục `scripts/`.
+
+## Giấy phép
+
+Dự án này được cấp phép theo Giấy phép MIT. Xem chi tiết tại tệp [LICENSE](./LICENSE).
